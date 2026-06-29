@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* 반응형: 모바일 우선 */
+/* shift+alt+f: 정렬 */
+/* reset */
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+/* small */
+@media (min-width:576px) {
+    body {background: lightblue;}
+}
+/* medium */
+@media (min-width:768px) {
+    body {background: lightcoral;}
+}
+/* large */
+@media (min-width:992px) {
+    body {background: lightgoldenrodyellow;}
+}
+/* xl(extra large) */
+@media (min-width:1200px) {
+    body {background: lightgray;}
+}
+/* xxl */
+@media (min-width:1400px) {
+    body {background: lightpink;}
+}
