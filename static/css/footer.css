@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* 초기화 */
+/* reset */
 
 *{
     margin:0;
@@ -10,6 +10,8 @@
 
 ul{
     list-style:none;
+    padding-left:0;
+    margin-bottom:0;
 }
 
 a{
@@ -20,19 +22,14 @@ body{
     font-family:"맑은 고딕",sans-serif;
 }
 
-.inner{
-    width:1200px;
-    margin:auto;
-}
 
-/* =========================
-   상단 노란 영역
-========================= */
+/*==========================
+상단
+==========================*/
 
 .footer-top{
 
     background:#f7c600;
-    height:58px;
 }
 
 .policy-menu{
@@ -40,20 +37,24 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:58px;
+    flex-wrap:wrap;
+
     gap:40px;
+
+    height:58px;
 }
 
 .policy-menu a{
 
     color:#111;
-    font-size:16px;
+    font-size:15px;
     font-weight:bold;
 }
 
-/* ==========================
-      하단
-========================== */
+
+/*==========================
+하단
+==========================*/
 
 .footer-bottom{
 
@@ -62,24 +63,17 @@ body{
     padding:60px 0;
 }
 
-.footer-wrap{
 
-    display:flex;
-    justify-content:space-between;
-}
-
-/* 왼쪽 */
-
-.footer-left{
-
-    width:520px;
-}
+/*==========================
+왼쪽
+==========================*/
 
 .logo{
 
     color:#fff;
-    font-size:52px;
+    font-size:48px;
     margin-bottom:25px;
+    font-weight:bold;
 }
 
 .sns{
@@ -87,29 +81,32 @@ body{
     display:flex;
     gap:15px;
     margin-bottom:30px;
+    flex-wrap:wrap;
 }
 
 .sns a{
 
-    width:45px;
-    height:45px;
+    width:46px;
+    height:46px;
+
+    background:#fff;
+    color:#222;
 
     border-radius:50%;
-    background:#fff;
 
     display:flex;
     justify-content:center;
     align-items:center;
 
-    color:#222;
-    font-size:12px;
+    font-size:11px;
     font-weight:bold;
 }
 
 .company p{
 
-    line-height:35px;
+    line-height:1.9;
     font-size:15px;
+    margin-bottom:10px;
 }
 
 .company strong{
@@ -117,34 +114,95 @@ body{
     color:#fff;
 }
 
-/* 오른쪽 */
 
-.footer-right{
+/*==========================
+사이트맵
+==========================*/
 
-    display:flex;
-    gap:70px;
-}
-
-.menu-box h3{
+.col h3{
 
     color:#fff;
-    margin-bottom:25px;
-    font-size:22px;
-    font-weight:normal;
-}
-
-.menu-box li{
-
+    font-size:18px;      /* 제목 축소 */
     margin-bottom:18px;
+
+    white-space:nowrap;  /* 한 줄 */
 }
 
-.menu-box a{
+.col li{
+
+    margin-bottom:12px;
+}
+
+.col a{
 
     color:#999;
-    font-size:17px;
+    font-size:14px;      /* 글자 축소 */
+    white-space:nowrap;  /* 줄바꿈 방지 */
+
+    transition:.3s;
 }
 
-.menu-box a:hover{
+.col a:hover{
 
     color:#fff;
+}
+
+
+/*==========================
+Tablet
+==========================*/
+
+@media (max-width:991px){
+
+.logo{
+
+    font-size:40px;
+}
+
+.footer-bottom{
+
+    text-align:center;
+}
+
+.sns{
+
+    justify-content:center;
+}
+
+}
+
+
+/*==========================
+Mobile
+==========================*/
+
+@media (max-width:576px){
+
+.policy-menu{
+
+    gap:15px;
+    height:auto;
+    padding:15px 0;
+}
+
+.policy-menu a{
+
+    font-size:13px;
+}
+
+.logo{
+
+    font-size:34px;
+}
+
+.company p{
+
+    font-size:14px;
+}
+
+.col h3{
+
+    margin-top:20px;
+}
+
 }
