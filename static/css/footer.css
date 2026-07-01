@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* 초기화 */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+body{
+    font-family:"맑은 고딕",sans-serif;
+}
+
+.inner{
+    width:1200px;
+    margin:auto;
+}
+
+/* =========================
+   상단 노란 영역
+========================= */
+
+.footer-top{
+
+    background:#f7c600;
+    height:58px;
+}
+
+.policy-menu{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:58px;
+    gap:40px;
+}
+
+.policy-menu a{
+
+    color:#111;
+    font-size:16px;
+    font-weight:bold;
+}
+
+/* ==========================
+      하단
+========================== */
+
+.footer-bottom{
+
+    background:#222;
+    color:#999;
+    padding:60px 0;
+}
+
+.footer-wrap{
+
+    display:flex;
+    justify-content:space-between;
+}
+
+/* 왼쪽 */
+
+.footer-left{
+
+    width:520px;
+}
+
+.logo{
+
+    color:#fff;
+    font-size:52px;
+    margin-bottom:25px;
+}
+
+.sns{
+
+    display:flex;
+    gap:15px;
+    margin-bottom:30px;
+}
+
+.sns a{
+
+    width:45px;
+    height:45px;
+
+    border-radius:50%;
+    background:#fff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    color:#222;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.company p{
+
+    line-height:35px;
+    font-size:15px;
+}
+
+.company strong{
+
+    color:#fff;
+}
+
+/* 오른쪽 */
+
+.footer-right{
+
+    display:flex;
+    gap:70px;
+}
+
+.menu-box h3{
+
+    color:#fff;
+    margin-bottom:25px;
+    font-size:22px;
+    font-weight:normal;
+}
+
+.menu-box li{
+
+    margin-bottom:18px;
+}
+
+.menu-box a{
+
+    color:#999;
+    font-size:17px;
+}
+
+.menu-box a:hover{
+
+    color:#fff;
+}
