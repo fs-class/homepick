@@ -318,6 +318,19 @@
     transition: color 0.2s ease;
 }
 
+/* 
+    변수 선언
+    :root {
+        --변수: #222;
+    }
+
+    변수 사용
+    선택자 {
+        속성: var(--변수);
+        속성: #333;
+    }
+
+*/
 .footer-sitemap-title:hover {
     color: var(--color-accent);
 }
