@@ -54,9 +54,9 @@
 
     font-family:var(--font-title);
 
-    font-size:34px;
+    font-size:24px;
 
-    letter-spacing:4px;
+    letter-spacing:2px;
 
     font-weight:700;
 
@@ -66,13 +66,13 @@
 
 .logo-kor{
 
-    margin-top:8px;
+    margin-top:4px;
 
-    font-size:22px;
+    font-size:14px;
 
     font-weight:300;
 
-    letter-spacing:2px;
+    letter-spacing:1px;
 
 }
 
@@ -82,11 +82,13 @@
 
 .header-nav{
 
-    flex:1;
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
 
     display:flex;
-
-    justify-content:center;
 
 }
 
@@ -116,13 +118,13 @@
 
     color:#fff;
 
-    font-size:24px;
+    font-size:1.125rem;
 
-    font-weight:600;
+    font-weight:500;
 
     text-decoration:none;
 
-    padding:34px 0;
+    padding:36px 0;
 
     transition:.3s;
 
@@ -190,7 +192,7 @@
 
     text-decoration:none;
 
-    font-size:16px;
+    font-size:13px;
 
     transition:.3s;
 
@@ -222,13 +224,13 @@
 
     position:absolute;
 
-    left:0;
+    left:50%;
 
-    top:100%;
+    transform:translateX(-50%);
 
-    width:100%;
+    top:92px;
 
-    background:#fff;
+    background:#f8f9fa;
 
     box-shadow:0 8px 25px rgba(0,0,0,.08);
 
@@ -237,8 +239,6 @@
     opacity:0;
 
     visibility:hidden;
-
-    transform:translateY(-15px);
 
     transition:.35s;
 
@@ -250,13 +250,27 @@
 
     visibility:visible;
 
-    transform:translateY(0);
-
 }
 
 /* ==========================================
    SUB MENU
 ========================================== */
+
+.mega-menu-inner{
+
+    display:flex;
+
+    gap:90px;
+
+    padding:0 230px;
+
+}
+
+.mega-column{
+
+    min-width:180px;
+
+}
 
 .mega-list{
 
@@ -280,7 +294,7 @@
 
     color:#222;
 
-    font-size:19px;
+    font-size:1rem;
 
     transition:.25s;
 
