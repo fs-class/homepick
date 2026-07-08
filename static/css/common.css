@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 /* 눈누: 나눔스퀘어, 저작권 표기 */
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/* 폰트어썸 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
 
 /* Style Guides */
 :root {

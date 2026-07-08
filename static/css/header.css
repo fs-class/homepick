@@ -23,7 +23,13 @@ header a {
 .logo {
     width: 207px; /* w207 */
     height: 69px; /* h69 */
-    
+    font-size: 1.375rem; /* fz22 */
+    text-align: center; /* tac */
+    letter-spacing: .3rem; /* ls.3rem */
+}
+.logo span {
+    display: block; /* db */
+    font-size: var(--fz-sm); /* fz14 */
 }
 
 /* GNB */
@@ -37,6 +43,52 @@ header a {
 /* Util */
 .util {
     display: flex;
+    gap: 15px; /* g15 */
+}
+/* 구분점 */
+.sns::after {
+    display: inline-block;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%; /* borr */
+    background: var(--color-white);
+    vertical-align: middle; /* vam */
+    margin-left: 8px;
 }
 /* SNS */
+.sns-link {
+    position: relative;
+}
+.sns-link span {
+    opacity: 1;
+    transition: 0.2s; /* trs.2s */
+}
+.sns:hover .sns-link span {
+    opacity: 0;
+}
+/* SNS 호버시 폰트어썸 아이콘 보이기 */
+.sns-link::before {
+    content: '\f167';
+    font-family: 'Font Awesome 6 Brands'; /* ff */
+    font-size: 28px;
+    color: #f00;
+    position: absolute; /* poa */
+    top: 50%; /* t50p */
+    left: 50%; /* l50p */
+    transform: translate(-50%, -50%); /* trft */
+    opacity: 0; /* op0 */
+    transition: 0.2s; /* trs.2s */
+}
+.sns:hover .sns-link::before {
+    opacity: 1; /* op1 */
+}
 /* Login */
+.login {
+    /* display: flex;
+    gap: 15px; */
+    font-size: var(--fz-sm);
+}
+.login > a:first-child {
+    margin-right: 15px; /* mr15 */
+}
