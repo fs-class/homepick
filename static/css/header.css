@@ -34,11 +34,19 @@ header a {
 
 /* GNB */
 .depth1 {
+    /* 대체로 글자 속성은 상속 받는다. */
     display: flex;
     gap: 75px; /* g75 */
+    text-align: center; /* tac */
+}
+.depth1 > li > a {
+    font-size: var(--fz-lg);
 }
 .depth2 {
-    display: none; /* dn */
+    /* alt+shift+a */
+    /* display: none; */ /* dn */
+    position: absolute; /* poa */
+    height: 200px;
 }
 /* Util */
 .util {
