@@ -14,7 +14,7 @@
     <!-- HTML5 시멘틱: 의미있는 -->
     <!-- div: 분할, 의미없다. -->
     <!-- header, footer, section(h2,h3,...), nav(GNB), ... -->
-    <header>
+    <header id="header">
         <!-- shift+alt+f -->
         <div class="container">
             <!-- 로고(logo) -->
@@ -65,9 +65,7 @@
             <!-- util: SNS + 로그인/회원가입 -->
             <div class="util">
                 <div class="sns">
-                    <a href="#" class="sns-link">
-                        <span>SNS</span>
-                    </a>
+                    <a href="#" class="sns-link"><span>SNS</span></a>
                 </div>
                 <div class="login">
                     <a href="templates/sub/login.html">로그인</a>
@@ -75,10 +73,10 @@
                 </div>
             </div>
         </div>
-
-        <!-- 서브 영역의 배경색 -->
         <div class="sub-bg"></div>
     </header>
+
+    <script src="../../static/js/header.js"></script>
 </body>
 
 </html>
